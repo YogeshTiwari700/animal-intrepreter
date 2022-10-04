@@ -38,7 +38,12 @@ export default function App() {
   return (
     <div className="App">
       <h1> Animal Interpreter </h1>
-      <input style={{ fontSize: "2rem" }} onClick={emojiInputHandler} />
+      <input
+        type="text"
+        placeholder="Please input emoji in Box"
+        style={{ fontSize: "2rem" }}
+        onClick={emojiInputHandler}
+      />
       <h2>{animal}</h2>
       <h3> Animal We Know </h3>
       {animalWeKnow.map(function (animal) {
